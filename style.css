@@ -1,0 +1,121 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("./images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+  background-position: top;
+  width: 100vw;
+  background-size: 100vw;
+}
+
+/* main container */
+.main{
+  width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* header */
+.main .header{
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.main .header img{
+  width: 50px;
+  height: 50px;
+}
+
+.main .header h1{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* equations section */
+.main .equations{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main .equations .quation{
+  margin-bottom: 1rem;
+}
+
+.main .equations .quation .quation-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.main .equations .quation .quation-header:hover{
+  color: hsl(276, 92%, 46%);
+  cursor: pointer;
+}
+
+.main .equations .quation .quation-header h2{
+  font-size: 24px;
+  font-weight: 600;
+  width: 90%;
+}
+
+.main .equations .quation .quation-header button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.quation-details{
+  display: none;
+}
+
+.show-details{
+  display: block;
+}
+
+.quation-details p{
+  font-size: 16px;
+  color: hsl(274, 7%, 64%);
+}
+
+
+/* responsive */
+@media (max-width: 700px) {
+  body{
+    background: url("./images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    background-position: top;
+    width: 100vw;
+    background-size: 100vw;
+  }
+
+  .main{
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main{
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .main .header h1{
+    font-size: 36px;
+  }
+}
